@@ -1,5 +1,3 @@
-// Person.h
-
 #ifndef PERSON_H
 #define PERSON_H
 
@@ -9,6 +7,7 @@ struct Person {
     std::string name;
     int age;
 };
+
 
 struct PersonList {
     Person* people;
@@ -21,4 +20,3 @@ PersonList deepCopyPersonList(PersonList pl);
 PersonList shallowCopyPersonList(PersonList pl);
 
 #endif // PERSON_H
-

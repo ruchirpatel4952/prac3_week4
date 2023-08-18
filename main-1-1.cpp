@@ -1,18 +1,17 @@
-// main-1-1.cpp
-
 #include <iostream>
-#include "person.h"
+#include "Person.h"
 
 int main() {
-    int n = 5; // Number of Person structs in the array
+    int n = 5; // Number of Person structs
+    
     Person* personArray = createPersonArray(n);
-
+    
     for (int i = 0; i < n; ++i) {
-        std::cout << "Person " << i + 1 << ": " << personArray[i].name << ", " << personArray[i].age << std::endl;
+        std::cout << "Person " << i + 1 << ": Name = " << personArray[i].name << ", Age = " << personArray[i].age << std::endl;
     }
-
-    // Clean up memory
+    
+    // Don't forget to free the allocated memory
     delete[] personArray;
-
+    
     return 0;
 }

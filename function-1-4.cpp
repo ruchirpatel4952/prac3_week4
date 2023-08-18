@@ -1,11 +1,9 @@
-// function-1-4.cpp
-
-#include "person.h"
+#include "Person.h"
 
 PersonList shallowCopyPersonList(PersonList pl) {
-    PersonList copy;
-    copy.numPeople = pl.numPeople;
-    copy.people = pl.people; // Perform a shallow copy by assigning the pointer
-
-    return copy;
+    PersonList newPersonList;
+    newPersonList.numPeople = pl.numPeople;
+    newPersonList.people = pl.people; // Perform a shallow copy
+    
+    return newPersonList;
 }

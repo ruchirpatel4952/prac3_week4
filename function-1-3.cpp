@@ -1,16 +1,14 @@
-// function-1-3.cpp
-
-#include "person.h"
+#include "Person.h"
 
 PersonList deepCopyPersonList(PersonList pl) {
-    PersonList copy;
-    copy.numPeople = pl.numPeople;
-    copy.people = new Person[pl.numPeople]; // Allocate a new array for the people
-
+    PersonList newPersonList;
+    newPersonList.numPeople = pl.numPeople;
+    newPersonList.people = new Person[pl.numPeople];
+    
     for (int i = 0; i < pl.numPeople; ++i) {
-        copy.people[i].name = pl.people[i].name;
-        copy.people[i].age = pl.people[i].age;
+        newPersonList.people[i].name = pl.people[i].name;
+        newPersonList.people[i].age = pl.people[i].age;
     }
-
-    return copy;
+    
+    return newPersonList;
 }
