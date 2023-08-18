@@ -1,4 +1,4 @@
-#include "Person.h"
+#include "person.h"
 
 PersonList deepCopyPersonList(PersonList pl) {
     PersonList newPersonList;
