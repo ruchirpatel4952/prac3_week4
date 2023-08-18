@@ -1,6 +1,6 @@
 // function-1-1.cpp
 
-#include "Person.h"
+#include "person.h"
 
 Person* createPersonArray(int n) {
     Person* persons = new Person[n]; // Allocate an array of n Person structs

@@ -1,7 +1,7 @@
 // main-1-2.cpp
 
 #include <iostream>
-#include "Person.h"
+#include "person.h"
 
 int main() {
     int n = 3; // Number of Person structs in the list

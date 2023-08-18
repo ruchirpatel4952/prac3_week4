@@ -1,7 +1,7 @@
 // main-1-1.cpp
 
 #include <iostream>
-#include "Person.h"
+#include "person.h"
 
 int main() {
     int n = 5; // Number of Person structs in the array
