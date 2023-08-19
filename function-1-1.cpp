@@ -1,4 +1,5 @@
-#include "person.h"
+#include "Person.h"
+
 
 Person* createPersonArray(int n) {
     Person* persons = new Person[n];

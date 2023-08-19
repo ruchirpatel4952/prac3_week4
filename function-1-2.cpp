@@ -1,6 +1,6 @@
 // function-1-2.cpp
 
-#include "person.h"
+#include "Person.h"
 
 PersonList createPersonList(int n) {
     PersonList personList;

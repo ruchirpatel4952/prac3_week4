@@ -1,5 +1,5 @@
 #include <iostream>
-#include "person.h"
+#include "Person.h"
 
 int main() {
     int n = 5; // Number of Person structs
